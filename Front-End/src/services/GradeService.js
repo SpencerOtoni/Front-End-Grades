@@ -5,7 +5,6 @@ const getAll = () => {
 };
 
 const get = (id) => {
-  console.log(id)
   return http.get(`/grade/${id}`);
 };
 
@@ -14,12 +13,10 @@ const create = (data) => {
 };
 
 const update = (id, data) => {
-  console.log(id, data)
   return http.put(`/grade/${id}`, data);
 };
 
 const remove = (id) => {
-  console.log(id)
   return http.delete(`/grade/${id}`);
 };
 
